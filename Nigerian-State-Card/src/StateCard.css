@@ -1,0 +1,36 @@
+.stateCard {
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.stateCard p, .stateCard h3{
+  padding: 5px;
+}
+
+.north {
+  background-color: #8b4513;
+}
+
+.south {
+  background-color: #008751;
+}
+
+.east {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.west {
+  background-color: #4169e1;
+}
+
+.default {
+  background-color: #ccc;
+}
+.stateCard:hover{
+transform: scale(1.05);
+}

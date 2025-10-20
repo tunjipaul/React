@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import StateCard from "./StateCard";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+    >
+      <StateCard
+        state="Lagos"
+        capital="Ikeja"
+        region="West"
+        population="20 million"
+      >
+        Lekki Conservation Centre
+      </StateCard>
+      <StateCard
+        state="Kaduna"
+        capital="Kaduna"
+        region="North"
+        population="50 million"
+      >
+        Lugard Foot Bridge
+      </StateCard>
+      <StateCard
+        state="Enugu"
+        capital="Enugu"
+        region="East"
+        population="6 million"
+      >
+        Bonny Island
+      </StateCard>
+      <StateCard
+        state="Rivers"
+        capital="Port Harcourt"
+        region="South"
+        population="10 million"
+      >
+        Nike Lake Resort
+      </StateCard>
+    </div>
+  );
 }
 
-export default App
+export default App;
