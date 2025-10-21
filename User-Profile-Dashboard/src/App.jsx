@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ProfileHeader from "./ProfileHeader";
+import ProfileStats from "./ProfileStats";
+import SkillBadge from "./SkillBadge";
+import ProfileCard from "./ProfileCard";
+import "./App.css";
+import "./ProfileCard.css";
+// //```
+// [Avatar Image]
+// Chinwe Okoro
+// Senior Developer at Paystack
+
+// Projects: 45  |  Followers: 1.2K  |  Following: 300
+
+// Skills:
+// [React - Expert] [JavaScript - Expert] [CSS - Intermediate]
+// ```
+
+// **Challenge:** Make the stats clickable and change color on hover
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="appContainer">
+      <ProfileCard>
+        <ProfileHeader
+          avatar="https://i.pinimg.com/1200x/f0/34/3b/f0343be20dd25de9832224fe5e2ea3bc.jpg"
+          name="Ogor Paul Olatunji"
+          title="Junior AI Developer at Google"
+        />
+        <ProfileStats projects={45} followers="1.2k" following={300} />
+        <SkillBadge skill="React" level="Expert" />
+        <SkillBadge skill="Javascript" level="Beginner" />
+        <SkillBadge skill="CSS" level="Intermediate" />
+      </ProfileCard>
+    </div>
+  );
 }
 
-export default App
+export default App;
