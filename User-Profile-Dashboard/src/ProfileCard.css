@@ -1,0 +1,71 @@
+.profileCard {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  width: 550px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profileCard:hover {
+  transform: scale(1.02);
+}
+
+.profileHeader img.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profileHeader h2 {
+  margin: 5px 0 0;
+}
+
+.profileHeader p {
+  color: #666;
+  margin: 4px 0 15px;
+}
+
+.profileStats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.entity {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+.entity:first-child {
+  background-color: rgb(186, 188, 66);
+  border-radius: 8px;
+}
+.entity:nth-child(2) {
+  background-color: rgb(185, 157, 64);
+  border-radius: 8px;
+}
+
+.entity:nth-child(3) {
+  background-color: rgb(186, 188, 66);
+  border-radius: 8px;
+}
+
+.entity:hover {
+  color: #f5f6ec;
+}
+
+.skillLevel {
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin: 4px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
