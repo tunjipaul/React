@@ -1,8 +1,10 @@
-import UserProfile from './UserProfile';
+import CurrencyConverter from "./CurrencyConverter";
 
-
-function Parent() {
-  return <Child name=" Tunde" age={25} />;
+function App(){
+    return(
+    <CurrencyConverter/>
+    )
+    
 }
 
-export default Parent;
+export default App;

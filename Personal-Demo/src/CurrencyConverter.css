@@ -1,0 +1,54 @@
+.converter {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #008751;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.converter h2 {
+  text-align: center;
+  color: #008751;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.exchange-rate {
+  text-align: center;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #b71c1c;
+}
