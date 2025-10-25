@@ -1,0 +1,29 @@
+.likeButton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.likeButton button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(24, 51, 24);
+  border-radius: 9px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.likeButton button:hover {
+  background-color: rgb(1, 35, 1);
+}
+
+.likeButton .liked {
+  color: red;
+}
+.likeButton p:first-of-type {
+  font-weight: 600;
+}
+
+.likeButton p:last-of-type {
+  font-style: italic;
+}
