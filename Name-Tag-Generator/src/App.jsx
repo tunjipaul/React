@@ -6,6 +6,7 @@ function App() {
     <div className="app">
       <h3>Name Tag Generator</h3>
       <NameTag />
+      
     </div>
   );
 }

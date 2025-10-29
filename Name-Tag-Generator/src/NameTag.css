@@ -37,3 +37,19 @@
 .nameTagOutput p span {
   color: rgb(49, 47, 91);
 }
+
+.download-btn{
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgb(237, 237, 237);
+  
+  border: none;
+  color: #0b0c15;
+  cursor: pointer;
+  
+}
+
+.download-btn:hover{
+  background-color: #ebf4fa;
+  color: rgb(127, 146, 214);
+}

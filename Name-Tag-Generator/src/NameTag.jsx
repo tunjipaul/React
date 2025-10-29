@@ -20,7 +20,6 @@ function NameTag() {
 
   return (
     <div className="nameTagGenerator">
-   
       <div className="inputGroup">
         <label>Name:</label>
         <input
@@ -46,9 +45,27 @@ function NameTag() {
       </div>
       <div className="nameTagOutput">
         <h4>Generated Form Output</h4>
-        <p>Name: <span>{name}</span></p>
-        <p>Title: <span>{title}</span></p>
-        <p>Company: <span>{company}</span></p>
+        <p>
+          Hello, my name is <span>{name}</span>
+        </p>
+        <p>
+          Title: <span>{title}</span>
+        </p>
+        <p>
+          Company: <span>{company}</span>
+        </p>
+
+        <button
+          className="download-btn"
+          type="button"
+          onClick={() =>
+            alert(
+              `Name Tag\nHello, my name is \nName: ${name}\nTitle: ${title}\nCompany: ${company}`
+            )
+          }
+        >
+          Download Details
+        </button>
       </div>
     </div>
   );
