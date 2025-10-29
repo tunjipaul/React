@@ -1,0 +1,39 @@
+.nameTagGenerator {
+  display: flex;
+  gap: 50px;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  background-color: #636ccb;
+  padding: 30px;
+  border-radius: 8px;
+  gap: 5px;
+}
+.inputGroup label {
+  font-weight: 600;
+}
+.inputGroup input {
+  border-radius: 5px;
+  border-collapse: collapse;
+  border: none;
+  padding: 8px 10px;
+}
+.nameTagOutput {
+  background-color: #636ccb;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.nameTagOutput h4 {
+  color: #0b0c15;
+}
+.nameTagOutput p {
+  color: white;
+  font-weight: 600;
+}
+.nameTagOutput p span {
+  color: rgb(49, 47, 91);
+}
