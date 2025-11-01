@@ -18,7 +18,7 @@
 6. Automatically updates total price
 
 **Sample Output:**
-![Output of Shopping Counter]()
+![Output of Shopping Counter](https://github.com/user-attachments/assets/896e0fa5-964a-463d-ad1f-79b0631fc5b2)
 
 **Technologies Used:**
 
