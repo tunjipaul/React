@@ -1,16 +1,60 @@
-# React + Vite
+#React Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple shopping cart built with React.
+Users can add Nigerian products to their cart, increase or decrease quantities, remove items, and clear the entire cart.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View list of available products
 
-## React Compiler
+Add items to cart
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Increase or decrease item quantity
 
-## Expanding the ESLint configuration
+Remove individual items
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clear all items from the cart
+
+Automatically updates total price
+
+Open your browser and visit:
+
+http://localhost:5173/
+
+📸 Sample Output
+Products
+Jollof Rice - ₦1500 [Add to Cart]
+Plantain - ₦500 [Add to Cart]
+Suya - ₦1200 [Add to Cart]
+
+🛒 Shopping Cart
+Jollof Rice - ₦1500 x 2 = ₦3000
+[+] [-] [Remove]
+
+Plantain - ₦500 x 1 = ₦500
+[+] [-] [Remove]
+
+Total: ₦3500
+[Clear Cart]
+
+🧠 Key Concepts Used
+
+React useState for managing cart and product states
+
+Array methods like .map(), .filter(), .reduce()
+
+Component-based structure for clarity and reusability
+
+CSS styling separated into modules
+
+Technologies Used
+
+React
+JavaScript
+CSS
+
+👨‍💻 Author
+
+Ogor Paul Olatunji (GMNSE)
+FrontEnd Developer | Engineer | Governance & Politics
+📧tunjipaul007@gmail.com

@@ -1,0 +1,49 @@
+.cartContainer {
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.product,.cartItem {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product button, .buttonDiv button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product button:hover, .buttonDiv button:hover {
+  background: #0056b3;
+}
+
+.clearBtn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.clearBtn:hover {
+  background: darkred;
+}
+
+.emptyText {
+  color: gray;
+  font-style: italic;
+}
