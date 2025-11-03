@@ -20,4 +20,4 @@ Styled with a simple, minimal design that adapts across devices.
 All amounts are displayed in NGN using proper currency formatting.
 
 **OUTPUT**
-![NairaTrack Output]()
+![NairaTrack Output](https://github.com/user-attachments/assets/075c19d3-b71e-4945-a7b8-6a470a275772)
