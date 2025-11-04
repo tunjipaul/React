@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// ## **Part 8: Tasks**
 
+// ## 🎯 Task 1: Temperature Converter
+
+// **Task:** Build a temperature converter where Celsius and Fahrenheit inputs stay in sync
+
+// **Requirements:**
+// 1. Create parent component `TemperatureApp.jsx`
+// 2. Create two child components: `CelsiusInput.jsx` and `FahrenheitInput.jsx`
+// 3. Lift temperature state to parent
+// 4. When user types in Celsius, Fahrenheit updates automatically
+// 5. When user types in Fahrenheit, Celsius updates automatically
+// 6. Formula: F = (C × 9/5) + 32, C = (F - 32) × 5/9
+
+// **Sample Output:**
+// ```
+// Temperature Converter
+
+// Celsius: [25]
+// Fahrenheit: [77]
+// ```
+
+import TemperatureApp from './TemperatureApp';
+import './App.css';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <h1>Temperature Converter</h1>
+      <TemperatureApp />
+    </div>
+  );
 }
 
-export default App
+export default App;

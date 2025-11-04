@@ -1,0 +1,51 @@
+.temperature-app{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+.fahrenheit-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.celsius-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.celsius-input fieldset, .fahrenheit-input fieldset{
+    border: none;
+}
+
+.fahrenheit-input input, .celsius-input input{
+    width: 200px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    border: none;
+    padding: 8px 10px;
+}
+
