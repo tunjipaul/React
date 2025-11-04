@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #c0cbd6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.student-grades-container {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-grades-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: #bbc8d5;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #dee2e6;
+  color: #007bff;
+}
+
+.filter-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.student-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+.student-subject {
+  color: #666;
+}
+
+.student-score {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.student-status {
+  font-weight: bold;
+}
+
+.student-status.pass {
+  color: green;
+}
+
+.student-status.fail {
+  color: red;
+}
+
+.student-summary {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
