@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(179, 163, 94);
+}
+
+.App{
+  padding: 20px;
+}
+
+.App h1{
+  color: #fff;
+  margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.todoApp{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todoApp h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todoApp button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todoApp button:hover{
+  background-color: #0056b3;
+}
+
+.todoApp p{
+  margin-top: 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todoInput{
+  display: flex;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoInput input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todoInput button{
+  margin-left: 10px;
 }
 
-.card {
-  padding: 2em;
+.todoList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.read-the-docs {
-  color: #888;
+.todoList li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
+
+.todoList li button{
+  margin-left: 10px;
+}
+
+.todoList li.completed{
+  text-decoration: line-through;
+}
+
+.todoFilter{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.todoFilter button{
+  margin: 0 5px;
+}
+
+.todoFilter button.active{
+  background-color: #007bff;
+  color: #fff;
+}
+
+.todoFilter button:hover{
+  background-color: #0056b3;
+}
+
+
+
