@@ -32,7 +32,7 @@ function Header() {
             <Menu className="w-6 h-6" />
           </button>
           <h1 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
-            Naija AI Document Assistant
+            TunjiPaul Local AI Document Assistant
           </h1>
         </div>
 

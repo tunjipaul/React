@@ -1,24 +1,26 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { login } from '../store/slices/authSlice';
-import { FileText } from 'lucide-react';
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "../store/slices/authSlice";
+import { FileText } from "lucide-react";
 
 function LoginForm() {
   const dispatch = useDispatch();
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!username.trim() || !email.trim()) return;
 
-    dispatch(login({
-      user: { username, email },
-      token: `token_${Date.now()}`,
-    }));
+    dispatch(
+      login({
+        user: { username, email },
+        token: `token_${Date.now()}`,
+      }),
+    );
 
-    setUsername('');
-    setEmail('');
+    setUsername("");
+    setEmail("");
   };
 
   return (
@@ -29,7 +31,7 @@ function LoginForm() {
             <FileText className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Naija AI Document Assistant
+            TunjiPaul Local AI Document Assistant
           </h1>
           <p className="text-gray-600">Login to access your documents</p>
         </div>
