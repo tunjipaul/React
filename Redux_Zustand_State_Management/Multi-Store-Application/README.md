@@ -227,4 +227,4 @@ MIT License - feel free to use this project for learning or as a template!
 
 Built with ❤️ using React, Redux Toolkit, and Tailwind CSS
 
-Run it here: 
+Run it here: https://ai-local-document-assistant.vercel.app/
